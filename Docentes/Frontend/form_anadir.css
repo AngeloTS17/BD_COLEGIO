@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #CAF0F8;
+    font-family: "Poppins", sans-serif;
+}
+/* Contenedor del Formulario */
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    padding: 40px 70px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation: formulario4k 0.6s ease-in-out;
+}
+/* Animacion del formulario4k */
+@keyframes formulario4k {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}
+
+/* Titulo "A{adir estudiantes" */
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1E81B0;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666666;
+}
+/* LLenado de los formulario */
+.text {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+/* Boton enviar */
+div .btn{
+    padding: 20px 0px 0px 0px ;
+    text-align: center;
+}
+
+div .btn-enviar {
+    text-align: center;
+    background-color: #1E81B0;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+div .btn-enviar:hover {
+    background-color: #10668d;
+    transform: scale(1.1);
+}
+/*Regresar*/
+.regresar {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    animation: btn-regresar 0.6s ease-in-out;
+}
+/* Animacion del boton de regresar */
+@keyframes btn-regresar {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.regresar a {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #1E81B0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.regresar a:hover {
+    background-color: #10668d;
+    color: white;
+    transform: scale(1.1);
+}
+
+.regresar .flecha {
+    margin-right: 5px;
+    font-size: 25px;
+}

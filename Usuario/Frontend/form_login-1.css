@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-image: url(../../imagenes/fondo_cole.png);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    animation: entrada 0.5s ease-in-out;
+}
+
+@keyframes entrada {
+    from{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h1 {
+    font-size: 2em;
+    color: #1e81b0;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+.form-group-enviar{
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    background-color: #f9f9f9;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 1px solid #1e81b0;
+    outline: none;
+}
+
+input[type="submit"] {
+    width: 30%;
+    padding: 10px;
+    background-color: #1e81b0;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background-color: #016186;
+    transform: scale(1.1);
+}
+
+.google-login {
+    margin: 20px auto 0 auto;
+    width: 60%;
+}
+
+.google-login a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    color: #757575;
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.google-login a:hover {
+    color: #1e81b0;
+    transform: scale(1.1);
+}
+
+.google-login img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: #1e81b0;
+    text-decoration: none;
+    transition: color 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+.back-link:hover {
+    color: #155a75;
+    transform: scale(1.1);
+}

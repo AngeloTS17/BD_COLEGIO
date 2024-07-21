@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background-color: #CAF0F8;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Titulo de la base de datos */
+.titulo-be {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    color: #1E81B0;
+    padding-top: 20px;
+    animation: titulo 0.5s ease-in-out;
+}
+a{
+    text-decoration: none;
+    color: #1E81B0;
+}
+/* Link */
+.link {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    animation: anima 0.5s ease-in-out;
+}
+
+.link a {
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 20px;
+    color: white;
+    background-color: #1E81B0;
+    margin: 0 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.link a:hover {
+    transform: scale(1.1);
+    background-color: #10668d;
+}
+
+/* Animación de los botones 4k y titulo */
+@keyframes titulo {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes anima {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Diseño de la tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 40px auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    animation: tabla4k 0.8s ease-in-out;
+}
+
+/* animaciond de la tabla */
+@keyframes tabla4k {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Diseño de las filas y columnas */
+table th {
+    background-color: #1E81B0;
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-align: center;
+}
+
+table tr {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+table tr:hover {
+    background-color: #cac9c9;
+}
+
+table td {
+    padding: 12px 15px;
+    font-size: 14px;
+    color: #383838;
+}
+
+/* Diseño del boton de eliminado */
+.options {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.option-button {
+    border-radius: 5px;
+    padding: 5px 10px;
+    background-color: #1E81B0;
+    color: white;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.option-button:hover {
+    background-color: #10668d;
+    transform: scale(1.1);
+}
+
+/* Diseño del buscador */
+.buscar-container {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+label {
+    color: #666666;
+}
+
+.text {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+/* Boton enviar */
+div .btn {
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+
+div .btn-enviar {
+    text-align: center;
+    background-color: #1E81B0;
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+div .btn-enviar:hover {
+    background-color: #10668d;
+    transform: scale(1.1);
+}
+
+/* Boton regresar */
+.regresar {
+    position: absolute;
+    top: 40px;
+    left: 30px;
+    animation: btn-regresar 0.6s ease-in-out;
+}
+
+@keyframes btn-regresar {
+    from {
+        opacity: 0;
+        transform: translateX(-40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.regresar a {
+    padding: 5px 10px;
+    border-radius: 10px;
+    background-color: #1E81B0;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.regresar a:hover {
+    background-color: #10668d;
+    transform: scale(1.1);
+}
+
+.regresar .flecha {
+    margin-right: 5px;
+    font-size: 25px;
+}
+/* Perfil de google */
+.profile-card {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s ease-in-out;
+    animation: profile 0.5s ease-in-out;
+}
+@keyframes profile {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.profile-card:hover{
+    transform: scale(1.05);
+}
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name, .email {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+.email {
+    font-weight: normal;
+}
+/* Perfil de google */
+.profile-card {
+    position: absolute;
+    cursor: pointer;
+    top: 20px;
+    right: 20px;
+    width: 300px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s ease-in-out;
+    animation: profile 0.5s ease-in-out;
+}
+@keyframes profile {
+    from{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+.profile-card:hover{
+    transform: scale(1.05);
+}
+.profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.name, .email {
+    margin: 0;
+    font-size: 14px;
+    text-align: left;
+}
+.email {
+    font-weight: normal;
+}
